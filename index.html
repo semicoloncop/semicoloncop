@@ -30,8 +30,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .Founders{
   text-align: center;
 }
-html{
-	scroll-behavior: smooth;
+#home #contact #services #about{
+	flex-basis: 50%;
+	    max-height: 100vh;
+	    overflow-y: scroll;
+	    border: 1px solid gray;
+	    scroll-snap-type: y mandatory;
+	    &.proximity {
+		    scroll-snap-type: y proximity;
+	    }
 	}
 </style>
 <body class="w3-black">
@@ -82,7 +89,7 @@ html{
   </header>
 
 <div class="w3-padding-64 w3-content w3-text-grey " id="services">
-<h2 class="w3-text-light-grey">Contact Us</h2>
+<h2 class="w3-text-light-grey">Services</h2>
   
 </div>
 
